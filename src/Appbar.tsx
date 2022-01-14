@@ -20,6 +20,7 @@ import ListRoundedIcon from "@mui/icons-material/ListRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 
 const pages = ["Masters", "Products", "Categories"];
+const subpages = ["Users", "Roles", "Permissions", "Configuration"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Appbar = () => {
@@ -109,6 +110,7 @@ const Appbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
+                <DashboardRoundedIcon />
                 {page}
               </Button>
             ))}
